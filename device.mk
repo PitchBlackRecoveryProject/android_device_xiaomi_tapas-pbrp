@@ -16,9 +16,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Configure emulated_storage.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
-
 # Boot control, Firmware
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery \
